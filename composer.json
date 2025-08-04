@@ -1,0 +1,15 @@
+{
+  "name": "yachaypuriq/guardachat",
+  "description": "GuardaChat - For keeping track of previous ChatGPT conversations",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "classmap": [
+      "app/"
+    ]
+  },
+  "require": {
+    "fastvolt/markdown": "^0.2.4"
+  }
+}

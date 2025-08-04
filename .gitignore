@@ -1,0 +1,12 @@
+# Composer dependencies
+/vendor/
+
+# Storage and database files
+/storage/*
+!/storage/json/
+/storage/json/*
+/database/*
+
+# Sandbox files
+/app/Controllers/SandboxController.php
+/app/Views/sandbox.php

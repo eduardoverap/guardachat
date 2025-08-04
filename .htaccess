@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Don't rewrite if being in /public
+RewriteRule ^public/ - [L]
+RewriteRule ^src/(.*)$ public/src/$1 [L]
+
+# Real static files
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -f
+RewriteRule (.+) public/$1 [L]
+
+# Empty route ("/") -> route=home (don't change URL)
+RewriteRule ^$ public/index.php?route=home [L,QSA]
+
+# Invalid routes -> always load index.php, but they're handled with PHP
+RewriteRule (.*) public/index.php?route=$1 [L,QSA]
+</IfModule>
