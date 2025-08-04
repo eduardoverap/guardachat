@@ -4,8 +4,6 @@
 
 GuardaChat is a lightweight PHP MVC application that allows users to import chat history from JSON files into an SQLite database. It provides a user-friendly interface to browse and query conversations through a dynamic frontend.
 
----
-
 ## Features
 
 - Import JSON files into an SQLite database.
@@ -15,8 +13,6 @@ GuardaChat is a lightweight PHP MVC application that allows users to import chat
 
 >Please note that the application currently supports only text messages, and may not handle well those from web searches.
 
----
-
 ## Tech Stack
 
 - **Backend:** PHP (MVC architecture)
@@ -24,8 +20,6 @@ GuardaChat is a lightweight PHP MVC application that allows users to import chat
 - **Web Server:** Apache
 - **Dependencies:** Composer, [Fastvolt Markdown Parser](https://github.com/fastvolt/markdown)
 - **Frontend:** Vanilla JavaScript (fetch API)
-
----
 
 ## Installation
 
@@ -67,11 +61,9 @@ GuardaChat is a lightweight PHP MVC application that allows users to import chat
 6. **Import your chats**
 
    - Uncompress your ChatGPT TAR.GZ downloaded files.
-   - Copy and rename your `conversation.json` files into the `storage/json/` directory.
+   - Copy and rename your `conversation.json` files into the `/storage/json/` directory.
    - Go to the `Import` page (it will show up on the first run of the application or if you haven't created your database yet).
    - Click on the `Import my chats` button to start. It will take several minutes to complete the process.
-
----
 
 ## Project Status
 
@@ -79,14 +71,10 @@ This is a beta version. The core functionality is implemented, but additional im
 
 As this is a project made as PHP practice, plans for porting this to an offline/desktop app are not considered in the short term. Feel free to fork, tweak and build upon this code to match your needs.
 
----
-
 ## Author
 
-Developed by Eduardo Vera Palomino
+Developed by Eduardo Vera Palomino.
 LinkedIn: @eduardoverap | GitHub: @eduardoverap
-
----
 
 ## License
 
