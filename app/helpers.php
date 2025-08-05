@@ -7,6 +7,7 @@ if (!function_exists('url')) {
   }
 }
 
+// Redirect to homepage
 if (!function_exists('goHome')) {
   function goHome(): void
   {
@@ -15,6 +16,7 @@ if (!function_exists('goHome')) {
   }
 }
 
+// Get formatted date from timestamp
 if (!function_exists('timestampToFormattedDate')) {
   function timestampToFormattedDate(?string $timestamp, string $format = 'l, F j, Y, \a\t h:i A'): ?string
   {
